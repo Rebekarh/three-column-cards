@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;400;700&family=Lexend+Deca:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Big Shoulders Display" cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.cards {
+    width: 75vw;
+    display: flex;
+    margin: 5rem auto;
+}
+
+.card__1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card__2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card__3 {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card {
+    
+    width: 30%;
+    padding: 2rem;
+}
+
+.card h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.card p {
+    color: white;
+    margin-bottom: 3rem;
+    font-size: .7rem;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    width: 80%;
+    font-size: .8rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        width: 100%;
+        margin: 0 1rem;
+    }
+
+    .card {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .card__1 {
+        border-bottom-left-radius: 0;
+
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+
+    .card__3 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
